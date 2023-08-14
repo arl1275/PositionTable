@@ -25,7 +25,8 @@ function eliminated_participant(props = Participant){
 
 }
 
-function updateScore(props){
-    
-
+function updateScore(props, cantidad){
+    let parti = ListaParticipantes.find(Participant=> Participant.name == props.name);
+    parti.score += cantidad;
 }
+
