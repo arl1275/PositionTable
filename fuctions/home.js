@@ -1,6 +1,6 @@
 import {Participant } from "./object";
 
-let ListaParticipantes = [];
+export let ListaParticipantes = [];
 
 function added_newParticipant(props = Participant){
     if(props.name != "" && props.img != null ){
